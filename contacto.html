@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | InsanityCraft</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <!-- Agregar el elemento de audio para reproducir el fondo.mp3 -->
+  <audio id="background-audio" autoplay loop>
+    <source src="fondo.mp3" type="audio/mp3">
+    Tu navegador no soporta el formato de audio MP3.
+  </audio>
+
+  <header class="header">
+    <img src="logo.png" alt="InsanityCraft Logo" class="logo">
+    <nav class="nav">
+      <ul>
+        <li><button id="copy-ip-button" onmouseover="playButtonSound()">Copiar IP</button></li>
+        <li><a href="index.html#players" onmouseover="playButtonSound()">Jugadores Conectados</a></li>
+        <li><a href="index.html#staff" onmouseover="playButtonSound()">Staff</a></li>
+        <li><a href="contacto.html" onmouseover="playButtonSound()">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="form" class="form-section">
+    <h2>Formulario de Contacto</h2>
+    <form id="contact-form" class="animated-form">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2024 🌸ᴄᴏʙʙʟᴇᴍᴏɴ ʙʟᴏꜱꜱᴏᴍ🌸. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
